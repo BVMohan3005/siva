@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreatCoder Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-container h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: #2c5364;
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-size: 18px;
+      font-weight: normal;
+      color: #666;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background: #2c5364;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background: #1c3a4b;
+    }
+
+    .login-container p {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 20px;
+    }
+
+    .login-container a {
+      color: #2c5364;
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>GreatCoder</h1>
+    <h2>Login to your account</h2>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="submit" value="Login" />
+    </form>
+    <p>New to GreatCoder? <a href="#">Sign up</a></p>
+  </div>
+</body>
+</html>
+
